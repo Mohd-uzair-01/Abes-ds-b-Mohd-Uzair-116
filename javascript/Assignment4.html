@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f2f6;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+
+        .nav-logo img {
+            width: 120px;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            max-width: 600px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 8px;
+            background: #f0f5ff url('https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_search-icon-e00a78.svg') no-repeat 15px center;
+            background-size: 20px;
+            font-size: 16px;
+            outline: none;
+        }
+
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 40px;
+        }
+
+        .nav-links li a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .nav-links li a img {
+            width: 24px;
+        }
+
+
+        .category-section {
+            background-color: #fff;
+            margin: 15px 0;
+            padding: 15px 0;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .category-item {
+            text-align: center;
+            text-decoration: none;
+            color: #000;
+            transition: color 0.2s ease;
+        }
+
+        .category-item:hover {
+            color: #2874f0;
+        }
+
+        .category-item img {
+            width: 64px;
+            height: 64px;
+        }
+
+        .category-item p {
+            margin: 8px 0 0 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                    alt="Flipkart Logo">
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products, brands and more">
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
+                            alt="Account Icon">
+                        <span>Account</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
+                            alt="Cart Icon">
+                        <span>Cart</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+                            alt="Seller Icon">
+                        <span>Become a Seller</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="category-section">
+        <div class="category-container">
+            <a href="#" class="category-item">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/e00302d428f5c7be.png?q=100"
+                    alt="Grocery">
+                <p>Grocery</p>
+            </a>
+            <a href="#" class="category-item">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/5f2ee7f883cdb774.png?q=100"
+                    alt="Mobiles & Tablets">
+                <p>Mobiles & Tablets</p>
+            </a>
+            <a href="#" class="category-item">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/ff559cb9d803d424.png?q=100"
+                    alt="Fashion">
+                <p>Fashion</p>
+            </a>
+            <a href="#" class="category-item">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/af646c36d74c4be9.png?q=100"
+                    alt="Electronics">
+                <p>Electronics</p>
+            </a>
+            <a href="#" class="category-item">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/1788f177649e6991.png?q=100"
+                    alt="Home & Furniture">
+                <p>Home & Furniture</p>
+            </a>
+            <a href="#" class="category-item">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/e90944802d996756.jpg?q=100"
+                    alt="TV & Appliances">
+                <p>TV & Appliances</p>
+            </a>
+            <a href="#" class="category-item">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/3c647c2e0d937dc5.png?q=100"
+                    alt="Flight Booking">
+                <p>Flights</p>
+            </a>
+            <a href="#" class="category-item">
+                <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/e00302d428f5c7be.png?q=100"
+                    alt="Beauty, Food & More">
+                <p>Beauty, Toys & More</p>
+            </a>
+        </div>
+    </section>
+
+</body>
+
+</html>
