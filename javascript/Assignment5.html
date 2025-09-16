@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #adi {
+            border: 2px solid black;
+            width: 700px;
+            height: 600px;
+            margin-left: 400px;
+            background-color: aqua;
+            padding: 20px;
+        }
+
+        /* Top row: image + counter */
+        #topRow {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #adi img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #adi h1 {
+            margin-left: 200px;
+        }
+
+        #displayBox {
+            display: flex;
+            margin-left: 45%;
+            margin-top: 40px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        #display {
+            font-size: 25px;
+        }
+
+        #button{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 150px;
+        }
+
+
+        #plus, #minus {
+            width: 120px;
+            height: 60px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="adi">
+        <div id="topRow">
+            <img src="/logo.jpg" alt="">
+            <h1>Counter</h1>
+        </div>
+
+        <div id="displayBox">
+            <p id="display"></p>
+        </div>
+
+        <div id="button">
+            <button id="plus" onclick="plus()">+</button>
+            <button id="minus" onclick="minus()">-</button>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+        document.getElementById("display").innerHTML = count;
+
+
+        function plus(){
+            count++;
+            document.getElementById("display").innerHTML = count;
+            if(count > 10){
+                alert("Value is more than 10")
+                count = 10;
+                document.getElementById("display").innerHTML = count;
+            }
+            
+        }
+
+        function minus(){
+            count--;
+            document.getElementById("display").innerHTML = count;
+            if(count < 0){
+                alert("Value is less than 0")
+                count = 0;
+                document.getElementById("display").innerHTML = count;
+            }
+            
+        }
+
+
+    </script>
+</body>
+</html>
