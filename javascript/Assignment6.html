@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        div{
+            border: 5px solid black;
+            border-radius: 20px;
+            height: 500px;
+            width: 400px;
+            margin: 30px;
+            margin-top: 100px;
+        }
+        p{
+            font-size: 2rem;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+
+    </div>
+    <div class="div2"></div>
+
+    <script>
+        const students ={
+            student1 : {
+                name:"uzair",
+                class:"Btech",
+                branch:"IT",
+                rollNo:123
+            },
+            student2 : {
+                name:"rashid",
+                class:"Btech",
+                branch:"IT",
+                rollNo:124
+            },
+            student3 : {
+                name:"arfat",
+                class:"Btech",
+                branch:"IT",
+                rollNo:126
+            },
+            student4 : {
+                name:"ashutosh",
+                class:"Btech",
+                branch:"DS",
+                rollNo:127
+            },
+            student5 : {
+                name:"raghvendra",
+                class:"Btech",
+                branch:"CS",
+                rollNo:128
+            }
+        };
+
+        let card1 = document.querySelector(".div1");
+        let card2 = document.querySelector(".div2");
+
+        for(let student of Object.values(students)){
+            let p = document.createElement('p');
+            p.innerText = student.name;
+            if(student.branch == 'IT'){
+                card1.appendChild(p);
+            }
+            else{
+                card2.appendChild(p);
+            }
+        }
+    </script>
+</body>
+</html>
