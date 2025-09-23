@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #adi {
+        body{
+            
+        }
+        #adi , #card1, #card2{
             border: 2px solid black;
-            width: 700px;
-            height: 600px;
-            margin-left: 400px;
+            width: 500px;
+            height: 500px;
             background-color: aqua;
             padding: 20px;
         }
@@ -58,9 +60,24 @@
             height: 60px;
             font-size: 40px;
         }
+
+        #card1 {
+
+        }
+
+        #card1 img {
+            width: 100px;
+        }
     </style>
 </head>
 <body>
+
+    <div id="card1">
+        <img src="/sunny.jpg" alt="">
+        <button>hide</button>
+    </div>
+    
+    
     <div id="adi">
         <div id="topRow">
             <img src="/logo.jpg" alt="">
@@ -76,6 +93,8 @@
             <button id="minus" onclick="minus()">-</button>
         </div>
     </div>
+
+    <div id="card2"></div>
 
     <script>
         let count = 0;
